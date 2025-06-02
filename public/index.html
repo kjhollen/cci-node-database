@@ -21,7 +21,7 @@
         </h1>
       </header>
         <h2>Tell us your secret wish (we won't keep the secret though)</h2>
-        <form>
+        <form id="wishForm" enctype="application/json">
           <label for="wish">I wish for</label>
           <input
             type="text"
@@ -29,9 +29,7 @@
             name="wish"
             placeholder="Your wish"
           />
-          <button id="submit">
-            Submit
-          </button>
+          <input type="submit" id="submit" value="Submit" />
         </form>
         <p><a href="wishes.html">See all wishes</a></p>
     </main>

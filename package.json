@@ -4,7 +4,7 @@
   "description": "simple database app with nedb",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [
     "database",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@seald-io/nedb": "^4.1.1",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "nodemon": "^3.1.10"
   }
 }

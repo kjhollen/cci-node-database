@@ -24,9 +24,11 @@
       <script>
         getWishes();
         async function getWishes() {
+          // this is a GET request, by default
           const response = await fetch('/wish');
           const data = await response.json();
 
+          // add a list element for each item in the response.
           const wishList = document.getElementById('wishes');
           for (let item of data) {
             console.log(item);
