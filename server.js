@@ -5,14 +5,13 @@ const app = express();
 const port = Number(process.env.PORT || 3000);
 const server = app.listen(port);
 
+console.log(`Server is listening on port ${port}`);
+
 // use this file as the database
 const dbOptions = {
   filename: 'database.db'
 };
 const database = new Datastore(dbOptions);
-
-console.log(`Server is listening on port ${port}`);
-
 database.loadDatabase();
 
 app.use(express.static('public'));
